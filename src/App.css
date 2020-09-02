@@ -11,7 +11,7 @@
 .btn {
   display: inline-block;
   border: none;
-  background: #555;
+  background: rgb(11, 132, 238);
   color: #fff;
   padding: 7px 20px;
   cursor: pointer;
@@ -19,7 +19,7 @@
 }
 
 .btn:hover {
-  background: #666;
+  background: rgb(5, 79, 145);
 }
 
 

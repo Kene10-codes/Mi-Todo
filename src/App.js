@@ -9,7 +9,7 @@ import axios from 'axios';
 
 import './App.css';
 
-export class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props)
   
@@ -52,19 +52,22 @@ addTodo = (title) => {
   render() {
     const {todos} = this.state
     return (
+    <Router>
       <div className='App'>
         <div className='container'>
           <Header />
-          {/* <Route exact path="/" render={props => (
-            <React.Fragment>
-               
-            </React.Fragment>
-          )} /> */}
-           <AddTodo addTodo={this.addTodo}/>
-                <Todo todos={todos} markComplete={this.markComplete} deleteTodo={this.deleteTodo}/>
-          {/* <Route path="/about" component={About} />     */}
+             <Route exact path="/" render={props => (
+              <React.Fragment>
+                  <AddTodo addTodo={this.addTodo}/>
+                  <Todo todos={todos} markComplete={this.markComplete} deleteTodo={this.deleteTodo}/>
+              </React.Fragment>
+          )} /> 
+           
+           <Route path="/about" component={About} />   
+          
         </div>
       </div>
+    </Router>
     )
   }
 }
