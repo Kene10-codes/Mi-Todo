@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 
 const buttonStyle = {
-    background: 'red',
+    background: 'rgb(11, 132, 238)',
     color: 'white',
     border: 'none',
     padding: '5px 9px',
