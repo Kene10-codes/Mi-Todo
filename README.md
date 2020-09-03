@@ -4,3 +4,4 @@ Mi-Todo is a Todo application that enables you to keep track of daily tasks one 
 Developed with ReactJs with implementation of right react workflow. 
 React Hook was equally used too.
 
+lIVE URL: https://mi-todoapp.netlify.app/
